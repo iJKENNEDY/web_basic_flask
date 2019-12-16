@@ -1,0 +1,11 @@
+body{
+	background: #C9C91F;
+	background: webkit-linear-gradient(to right, #C91F74, #C9C91F);
+	background: linear-gradient(to right, #C91F74, #C9C91F);
+
+}
+
+ul li a{
+	color: #0F0F0F;
+	font-size: 16px;	
+}
