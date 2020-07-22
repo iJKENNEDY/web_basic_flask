@@ -5,6 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap.css')}}">
 </head>
 <body>
+
+	<div class="">
+		<nav class="navbar navbar-dark bg-primary  text-center">
+			<a class="navbar-brand" href="#">
+				<img src="../static/img/Shifu.ico"  width="30" height="30" class="d-inline-block align-top" alt="">
+				Tech One
+			</a>
+		</nav>		
+	</div>
+
 	<div class="card-header  navbar-dark ">
 		<ul class="nav nav-pills nav-fill">
 			<li class="nav-item">
@@ -23,9 +33,9 @@
 	</div>
 
 	<div class="container p-4">
-	{% block content %}
-  	{% endblock %}
-  	</div>
-  	
+		{% block content %}
+		{% endblock %}
+	</div>
+
 </body>
 </html>
