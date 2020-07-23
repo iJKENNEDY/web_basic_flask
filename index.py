@@ -18,5 +18,10 @@ def recursos():
 def about():
 	return render_template('about.html')
 
+@app.route('/ciberseguridad')
+def ciberseguridad():
+	return render_template('cyberSeguridad.html')
+
 if __name__ == '__main__':
 	app.run(debug=True)
+
