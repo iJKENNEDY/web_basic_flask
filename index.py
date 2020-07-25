@@ -18,6 +18,10 @@ def recursos():
 def about():
 	return render_template('about.html')
 
+@app.route('/codeProgramacion')
+def programacion():
+	return render_template('codeProgramacion.html')
+
 @app.route('/ciberseguridad')
 def ciberseguridad():
 	return render_template('cyberSeguridad.html')
