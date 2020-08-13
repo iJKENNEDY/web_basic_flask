@@ -26,6 +26,10 @@ def programacion():
 def ciberseguridad():
 	return render_template('cyberSeguridad.html')
 
+@app.route('/login')
+def login():		
+	return render_template('login.html')
+
 if __name__ == '__main__':
 	app.run(debug=True)
 
