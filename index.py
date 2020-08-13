@@ -30,6 +30,13 @@ def ciberseguridad():
 def login():		
 	return render_template('login.html')
 
+@app.route('/blogContenidos')
+def blog_contenidos():
+	return render_template('formulario_blog.html')
+
+@app.route('/crear_cuenta')
+def crearCuenta():
+	return render_template('crearCuenta.html')
 if __name__ == '__main__':
 	app.run(debug=True)
 

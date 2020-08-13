@@ -1,0 +1,33 @@
+
+
+
+{% extends 'layout.html' %}
+
+
+{% block content %}
+	<content class="container">
+		<article class="">
+			<h2>Crear Cuenta</h2>
+			<form>
+				nombre: <input type="text" name="nombre">
+				<br>
+				alias: <input type="text" name="alias">
+				<br>
+				sexo:
+				<select name="sexo">
+					<option value="masculino">Masculino</option>	
+					<option value="femenino">Femenino</option>
+				</select>
+				<br>
+				correo: <input type="email" name="email">
+				<br>
+				contraseña: <input type="password" name="password">
+				<br>
+
+				<input class="bg-info" type="submit" name="enviar" value="registrar">
+	
+			</form>
+		</article>
+	</content>
+
+{% endblock %}

@@ -4,20 +4,34 @@
 	<title>Login</title>
 </head>
 <body>
-
-	<div>
+	
+	{% extends "layout.html" %}
+	
+	{% block content %}
+	<div class="card-header">
 		<div>
 			Login
 		</div>
+		<br>
+		<form>
 		<div>
 			<label>USER</label>
 			<input type="usuario" name="">
-			<span></span>
+			
+			<span><br></span>
+
 			<label>PASSWORD</label>
 			<input type="password" name="">
 			
 		</div>
-	</div>
 
+			<input class="bg-primary" type="submit" name="inciarSesion" value="Iniciar">
+		</form>
+		<div>
+			<h5><a href="crearCuenta.html">Crear Cuenta</a></h5>
+		</div>
+	</div>
+	
+	{% endblock %}
 </body>
 </html>

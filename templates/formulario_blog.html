@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form-blogs</title>
+</head>
+<body>
+	{% extends 'layout.html' %}
+
+	{% block content %}
+
+	<div class="container">
+		<div class="">
+			<div class="header">
+				<h2>CONTENIDOS blogs</h2>
+				<nav>
+					<ul type="None">
+						<li><a href="#">inicio</a></li>
+						<li><a href="#">vista previa</a></li>
+						<li><a href="#">nuevo</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div>
+				<fieldset>
+					<legend>Nuevos Contenidos</legend>
+					<form>
+						<table>
+							<tr>
+								<td>
+									<label for="titulo">Titulo</label>
+									<input type="text" name="titulo">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="categoria">categoria</label>
+									<select name="categoria" value="categoria">
+										<option name="ciberseguridad">ciberseguridad</option>
+										<option name="programacion">programacion</option>
+										<option name="vulnerabilidades">vulnerabilidades</option>
+										<option name="cibertech">cibertech</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="contenido">Contenido</label>
+									<textarea name="contenido" style="width: 300px;height: 200px;">
+										
+									</textarea>
+
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button>GUARDAR</button> <span></span>
+									<button>CANCELAR</button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+
+</body>
+</html>
