@@ -30,7 +30,7 @@ def ciberseguridad():
 def login():		
 	return render_template('login.html')
 
-@app.route('tipsSeguridadTech')
+@app.route('/tipsSeguridadTech')
 def tipsTecnologia():
 	return render_template('tipsTecnologia.html')
 
